@@ -4,10 +4,12 @@ public class Main {
         //System.out.println(Person1.getName()+","+Person1.getSurname()+","+Person1.getAge());
         //Person Person2 =new Person("Ola","Nowak");
         //System.out.println(Person2);
-        Student student1P1= new Student("Maksiu","Golgowski",3);
+        Person student1P1= new Student("Maksiu","Golgowski",3);
         Student student1P2 = new Student("NieMaksiu","NieGolgowski",23);
         System.out.println(student1P1);
         System.out.println(student1P2);
+        Teacher teacherSN=new Teacher("Sebastian","Nowak","Polish","PE");
+        System.out.println(teacherSN);
     }
 
 }
