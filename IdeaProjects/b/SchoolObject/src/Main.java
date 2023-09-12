@@ -16,6 +16,9 @@ public class Main {
         System.out.println(class3AC);
         Supervising supervising1= new Supervising("Anna","Kowalska",class3AC,"Math","Meth","Chemistry");
         System.out.println(supervising1);
+        student1P1.onDuty();
+        supervising1.onDuty();
+        School zs10=School.getSchool();
     }
 
 
