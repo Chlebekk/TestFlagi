@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public sealed class Teacher extends Person permits Supervising{
+public sealed class Teacher extends Person implements duty permits Supervising{
 //sealed permits what can extend the class
 private ArrayList<String> Subjects=new ArrayList<>();
 
@@ -16,5 +16,10 @@ private ArrayList<String> Subjects=new ArrayList<>();
                 ", surname:"+this.getSurname() +
                 ", Subjects=" + Subjects +
                 '}';
+    }
+
+    @Override
+    public void onDuty() {
+        System.out.println("Patrolling");
     }
 }

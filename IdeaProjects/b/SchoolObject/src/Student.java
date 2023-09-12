@@ -1,4 +1,4 @@
-public class Student extends Person{
+public class Student extends Person implements duty{
     private static int HowMany=0;
     private int StudentNmb=0;
 
@@ -11,5 +11,10 @@ public class Student extends Person{
     @Override
     public String toString() {
         return "Student{name:"+getName()+", surname:"+getSurname()+", age:"+getAge()+", studentNumber:"+this.StudentNmb;
+    }
+
+    @Override
+    public void onDuty() {
+        System.out.println("Cleaning the whiteboard");
     }
 }
