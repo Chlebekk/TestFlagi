@@ -10,9 +10,13 @@ public class Main {
         System.out.println(student1P2);
         Teacher teacherSN=new Teacher("Sebastian","Nowak","Polish","PE");
         System.out.println(teacherSN);
+        student1P1.setAge(2);
         Class class2AC =new Class("AC",student1P1,student1P2);
         System.out.println(class2AC);
         Class class3AC=new Class(class2AC);
+        System.out.println(class3AC);
+        Student student3= new Student("Abuyin","In Djakir Omar Khalid Ben Haji Al Sharidi",78);
+        class3AC.addStudentToClass(student3);
         System.out.println(class3AC);
         Supervising supervising1= new Supervising("Anna","Kowalska",class3AC,"Math","Meth","Chemistry");
         System.out.println(supervising1);

@@ -40,6 +40,10 @@ public abstract class Person {
         return age;
     }
 
+    /**
+     * ustawia wiek osoby, jeśli wpisany wiek mniejszy od 0 ustawia 0
+     * @param age -wiek osoby
+     */
     public void setAge(int age) {
         if (age<0){
             this.age=0;

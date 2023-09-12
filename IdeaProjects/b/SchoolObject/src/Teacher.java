@@ -18,6 +18,9 @@ private ArrayList<String> Subjects=new ArrayList<>();
                 '}';
     }
 
+    /**
+     * funkcja która zwraca tekst oznaczający że nauczyciel ten jest dyżurny
+     */
     @Override
     public void onDuty() {
         System.out.println("Patrolling");

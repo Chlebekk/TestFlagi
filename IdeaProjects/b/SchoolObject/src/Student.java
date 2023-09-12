@@ -12,7 +12,9 @@ public class Student extends Person implements duty{
     public String toString() {
         return "Student{name:"+getName()+", surname:"+getSurname()+", age:"+getAge()+", studentNumber:"+this.StudentNmb;
     }
-
+    /**
+     * funkcja która zwraca tekst oznaczający że uczeń ten jest dyżurny
+     */
     @Override
     public void onDuty() {
         System.out.println("Cleaning the whiteboard");

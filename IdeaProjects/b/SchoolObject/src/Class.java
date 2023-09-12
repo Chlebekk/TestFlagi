@@ -14,6 +14,9 @@ public class Class {
         this.name=clas.name;
     }
 
+    /**
+     * klasa - reprezentuje zespół uczniów
+     */
     public Class(String name,Student ...students) {
 
             this.students.addAll(Arrays.asList(students));
@@ -21,6 +24,10 @@ public class Class {
 
     }
 
+    /**
+     * @param student -obiekt reprezentujący pojedynczego ucznia
+     * @return - brak
+     */
     public  void addStudentToClass(Student student){
         students.add(student);
     }
