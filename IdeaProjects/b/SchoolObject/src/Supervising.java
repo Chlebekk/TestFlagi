@@ -1,6 +1,8 @@
 public final class Supervising extends Teacher{
-    public Supervising(String name, String surname, String... subjects) {
+    private Class sClass;
+
+    public Supervising(String name, String surname, Class sClass, String... subjects) {
         super(name, surname, subjects);
+        this.sClass = sClass;
     }
-    //final stops extending this class
 }
