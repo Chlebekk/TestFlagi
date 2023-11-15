@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Produkt> wszystkieProdukty = new ArrayList<>();
     private ListView listView;
     private EditText editText;
+    private EditText editTextCena;
     private Button button;
 
     @Override
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         listView = findViewById(R.id.listView2);
         editText = findViewById(R.id.editText);
         button = findViewById(R.id.button);
+        editTextCena = findViewById(R.id.editTextNumberDecimal);
         ArrayAdapter<Produkt> adapter = new ArrayAdapter<>(
                 this,
                 android.R.layout.simple_list_item_1,
@@ -52,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         String p = editText.getText().toString();
-                        wszystkieProdukty.add(new Produkt(p,40));
+                        int cena = Integer.valueOf(editTextCena.getText().toString());
+                        wszystkieProdukty.add(new Produkt(p,cena));
                         adapter.notifyDataSetChanged();
                     }
                 }
